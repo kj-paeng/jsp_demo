@@ -1,7 +1,7 @@
 <%@ page import = "javacan.member.MemberBean" %>
 <%  MemberBean mb = (MemberBean)session.getAttribute("member.login");  %>
 <style>
-A.menu:link {color: blue}
+A.menu:link {color: red}
 A.menu:visited {color: blue}
 A.menu:active {color: blue}
 </style>
