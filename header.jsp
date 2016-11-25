@@ -2,8 +2,9 @@
 <%  MemberBean mb = (MemberBean)session.getAttribute("member.login");  %>
 <style>
 A.menu:link {color: red}
-A.menu:visited {color: blue}
-A.menu:active {color: blue}
+A.menu:visited {color: red}
+A.menu:active {color: bbb}
+A.menu:inactive {color: black}
 </style>
 <center>
 <table width="650" border="0" cellpadding="2" cellspacing="0">
