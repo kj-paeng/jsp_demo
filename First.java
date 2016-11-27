@@ -39,8 +39,7 @@ public class DBConnectionPool {
 				break;
 			}
 			try {
-				// ÀúÀåµÇ¾î ÀÖ´Â ConnectionÀÌ ¾øÀ» °æ¿ì
-				// ConnectionÀÌ ¹İÈ¯µÉ ¶§ ±îÁö ±â´Ù¸°´Ù.
+				
 				wait();
 			} catch(InterruptedException ex) {}
 		}
@@ -80,7 +79,7 @@ public class DBConnectionPool {
 	}
 	
 	public synchronized void returnConnection(Connection conn) {
-		// ConnectionÀ» Vector¿¡ ¸Ç ¸¶Áö¸·¿¡ »ğÀÔÇÑ´Ù.
+		// Connectionì„ Vectorì— ë§¨ ë§ˆì§€ë§‰ì— ì‚½ì…í•œë‹¤.
 		freeConnections.addElement(conn);
 		checkedOut--;
 		notifyAll();
