@@ -79,7 +79,7 @@ public class DBConnectionPool {
 	}
 	
 	public synchronized void returnConnection(Connection conn) {
-		// Connection을 Vector에 맨 마지막에 삽입한다.
+		
 		freeConnections.addElement(conn);
 		checkedOut--;
 		notifyAll();
