@@ -1,4 +1,4 @@
-package javacan.db.pool;
+package mcan.db.pool;
 
 /**
 */
